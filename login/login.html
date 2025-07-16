@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+        </head>
+<body>
+        <div class="bg-slider"></div>
+        <div class="bg-slider"></div>
+        <div class="bg-slider"></div>
+    <header>
+        <div class="line">
+            <div class="logo">
+                Wallper
+            </div>
+            <div class="singin">
+                <button id="log" class="btn-primary">Login</button>
+                <button class="btn-secondary">Singin</button>
+            </div>
+        </div>
+        <div class="oz">
+<h1>Login</h1>
+<p>User name</p>
+<input id="User" type="text" class="in">
+<p>password</p>
+<input id="pass" type="password" class="in">
+<br>
+<button id="btn" class="btn-l">Login</button>
+
+
+
+        </div>
+        </div>
+        </header>
+<script>
+ document.getElementById("btn").addEventListener('click', function() {
+    var user = document.getElementById("User").value;
+    var pass = document.getElementById("pass").value;
+
+    //console.log(user, pass);
+    console.log("User:", user);
+    console.log("Password:", pass);
+    if (user === "" || pass === "") {
+        alert("Please fill in all fields.");
+    } else {
+    // Here you can add your login logic, like sending the data to a server
+        alert("Login successful!");
+    }
+});
+    // Add event listener for the Enter key
+        document.getElementById("User").addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                document.getElementById("btn").click(); // Trigger the button click
+            }
+        });
+
+        document.getElementById("pass").addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                document.getElementById("btn").click(); // Trigger the button click
+            }
+        });
+</script>
+</body>
+</html>

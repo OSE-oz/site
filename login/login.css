@@ -1,0 +1,139 @@
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: rgb(182, 173, 173);
+        }
+
+        header {
+            height: 100vh;
+            overflow: hidden;
+            color: white;
+            text-align: center;
+            background: #000;
+            background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5181c7f5-4300-4d23-a0d1-d0cc2a40214b/dffpuj1-62718e45-2a55-4ceb-9dfd-23cb3bfc453a.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzUxODFjN2Y1LTQzMDAtNGQyMy1hMGQxLWQwY2MyYTQwMjE0YlwvZGZmcHVqMS02MjcxOGU0NS0yYTU1LTRjZWItOWRmZC0yM2NiM2JmYzQ1M2EuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.a0y2ECKSKeETyTF3WllPfsQ0zbSHks58ny3klCEUd_Q');
+            background-size: cover;
+        }
+
+        .line {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            z-index: 1;
+            background: rgba(0,0,0,0.3);
+            backdrop-filter: blur(5px);
+        }
+
+        .logo {
+            font-size: 44px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .btn-primary, .btn-secondary {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+        }   
+    #log{
+    background: white;
+         color: black;}
+        .btn-primary:hover{
+            background-color: white;
+            color: black;
+        }
+
+        .btn-secondary:hover{
+            background-color: white;
+            color: black;
+        }
+
+        .line2 {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        .oz {
+            z-index: 1;
+            margin-top: 25vh;
+            width: 30%;
+            max-width: 800px;
+            display: inline-block;
+            opacity: 0;
+            transform: translateY(100px);
+            animation: slideUp 1.2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+            animation-delay: 0.3s;
+            padding: 2rem;
+            background: rgba(0,0,0,0.3);
+            border-radius: 12px;
+            backdrop-filter: blur(5px);
+        }
+
+        .bg-slider {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            opacity: 0;
+            transition: opacity 2s ease-in-out;
+            z-index: 0;
+        }
+
+        .bg-slider.active {
+            opacity: 0.8;
+        }
+
+         @keyframes slideUp {
+            0% {
+                opacity: 0;
+                transform: translateY(80px) scale(0.98);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+         }
+  
+         .in{
+            width: 80%;
+            height: 35px;
+            border-radius: 12px;
+            border: 2px solid white;
+            background: transparent;
+            color: white;
+            font-family: "Sue Ellen Francisco", cursive;
+        }
+  
+        p{
+            text-align: left;
+            margin-left: 10%;
+            font-family: "Sue Ellen Francisco", cursive;
+        }
+  
+        .btn-l{
+            margin-top:20px;
+            padding: 10px 20px;
+            border-radius: 12px;
+            border:solid 2px white;
+            background: transparent;
+            color: white;
+            font-family: "Sue Ellen Francisco", cursive;
+            width: 30%;
+        }
+  
+        h1{
+            font-family: "Sue Ellen Francisco", cursive;
+        }
+        .btn-l:hover{
+            background-color: white;
+            color: black;
+        }

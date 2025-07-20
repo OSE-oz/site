@@ -1,6 +1,6 @@
 # site for wallper
 header:
-<img width="1364" height="644" alt="Screenshot 2025-07-20 185905" src="https://github.com/user-attachments/assets/40276395-5761-42c0-a0f9-787d9e74852d" />
+<img width="1286" height="662" alt="Screenshot 2025-07-13 230803" src="https://github.com/user-attachments/assets/3a954f53-abf1-477e-a709-37e4d2fcda0f" />
 
 body:
 <img width="1345" height="650" alt="Screenshot 2025-07-20 185820" src="https://github.com/user-attachments/assets/beeb9b00-4fab-40ca-a222-7442ccf281ca" />
